@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "task-manager-api"
+version = "0.1.0"
+description = "Simple task manager"
+authors = ["Kirill Shugaev <kira.krut@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.1"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+sqlalchemy = "^2.0.29"
+pydantic-settings = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
